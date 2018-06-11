@@ -1,0 +1,19 @@
+{% extends 'app/base.html' %}
+
+{% block content %}
+<table class="table">
+    <tr>
+      <th>タイトル</th>
+      <td>{{ description.title }}</td>
+    </tr>
+    <tr>
+      <th>カテゴリ</th>
+      <td>{{ description.category }}</td>
+    </tr>
+    <tr>
+      <th>本文</th>
+      <td>{{ description.text | linebreaksbr}}</td>
+    </tr>
+</table>
+
+{% endblock %}

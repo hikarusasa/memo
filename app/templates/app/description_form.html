@@ -1,0 +1,8 @@
+{% extends 'app/base.html' %}
+{% block content %}
+<form action="" method="POST" class='mt-5'>
+  {{ form.as_p }}
+<button type="submit">送信</button>
+{% csrf_token %}
+</form>
+{% endblock %}
